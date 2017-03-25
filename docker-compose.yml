@@ -1,0 +1,12 @@
+plantumlbot:
+  build: .
+  links:
+    - plantuml
+  environment:
+    PLANTUMLBOT: "${PLANTUMLBOT}"
+plantuml:
+  image: neam/plantuml-server:latest
+  ports:
+    - "8080:8080"
+  expose:
+    - 8080
